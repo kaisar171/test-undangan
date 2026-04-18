@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Undangan Pernikahan Widi &amp; Winda</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<script>
+tailwind.config={theme:{extend:{colors:{emerald:{950:'#022C22',900:'#064E3B',800:'#065F46',700:'#047857',600:'#059669',500:'#10B981',400:'#34D399',300:'#6EE7B7'},gold:{50:'#FFFDF5',100:'#FFF8DC',200:'#F5DEB3',300:'#EED9A0',400:'#D4AF37',500:'#B8860B',600:'#996515',700:'#806B1E'},dark:'#060E0A'},fontFamily:{playfair:['"Playfair Display"','serif'],cormorant:['"Cormorant Garamond"','serif'],lato:['Lato','sans-serif']}}}}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Lato',sans-serif;background:#060E0A;color:#fff;overflow-x:hidden}
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:#060E0A}
+::-webkit-scrollbar-thumb{background:#065F46;border-radius:3px}
+
+.cover-overlay{position:fixed;inset:0;z-index:100;background:linear-gradient(160deg,#022C22 0%,#064E3B 30%,#065F46 60%,#022C22 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;transition:opacity 1s,visibility 1s}
+.cover-overlay.hidden{opacity:0;visibility:hidden;pointer-events:none}
+
+.o-frame{position:relative;padding:40px}
+.o-frame::before,.o-frame::after{content:'';position:absolute;width:70px;height:70px;border-color:#D4AF37;border-style:solid}
+.o-frame::before{top:0;left:0;border-width:2px 0 0 2px}
+.o-frame::after{top:0;right:0;border-width:2px 2px 0 0}
+.o-frame .cbl,.o-frame .cbr{position:absolute;width:70px;height:70px;border-color:#D4AF37;border-style:solid}
+.o-frame .cbl{bottom:0;left:0;border-width:0 0 2px 2px}
+.o-frame .cbr{bottom:0;right:0;border-width:0 2px 2px 0}
+
+.gs{background:linear-gradient(90deg,#D4AF37,#F5DEB3,#D4AF37,#F5DEB3,#D4AF37);background-size:200% 100%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:sh 4s ease-in-out infinite}
+@keyframes sh{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+
+.divo{display:flex;align-items:center;justify-content:center;gap:14px;color:#D4AF37}
+.divo::before,.divo::after{content:'';width:70px;height:1px;background:linear-gradient(90deg,transparent,#D4AF37,transparent)}
+
+.pf{width:200px;height:260px;border-radius:50% 50% 50% 50%/60% 60% 40% 40%;overflow:hidden;border:3px solid #D4AF37;box-shadow:0 0 25px rgba(212,175,55,0.2),0 0 50px rgba(212,175,55,0.08)}
+.pf img{width:100%;height:100%;object-fit:cover}
+
+.sr{opacity:0;transform:translateY(35px);transition:opacity .8s,transform .8s}
+.sr.rv{opacity:1;transform:translateY(0)}
+
+.gc{background:rgba(6,78,59,0.3);backdrop-filter:blur(14px);border:1px solid rgba(212,175,55,0.2);border-radius:16px}
+.cb{background:linear-gradient(145deg,rgba(6,78,59,0.6),rgba(2,44,34,0.8));border:1px solid rgba(212,175,55,0.3);backdrop-filter:blur(8px)}
+.rc{background:linear-gradient(145deg,rgba(6,78,59,0.4),rgba(2,44,34,0.6));border:1px solid rgba(212,175,55,0.25);transition:all .3s}
+.rc:hover{border-color:rgba(212,175,55,0.5);box-shadow:0 0 20px rgba(212,175,55,0.08)}
+
+.bg{background:linear-gradient(135deg,#D4AF37,#B8860B);color:#022C22;font-weight:700;transition:all .3s;box-shadow:0 4px 15px rgba(212,175,55,0.3)}
+.bg:hover{background:linear-gradient(135deg,#EED9A0,#D4AF37);box-shadow:0 6px 25px rgba(212,175,55,0.4);transform:translateY(-2px)}
+.bo{border:2px solid #D4AF37;color:#D4AF37;background:transparent;transition:all .3s}
+.bo:hover{background:rgba(212,175,55,0.1)}
+
+.pt{position:fixed;pointer-events:none;z-index:1;width:4px;height:4px;border-radius:50%;background:#D4AF37;opacity:0;animation:fu linear infinite}
+@keyframes fu{0%{opacity:0;transform:translateY(100vh) rotate(0)}10%{opacity:.5}90%{opacity:.5}100%{opacity:0;transform:translateY(-10vh) rotate(720deg)}}
+
+.tt{position:fixed;bottom:30px;left:50%;transform:translateX(-50%) translateY(100px);z-index:200;padding:12px 24px;border-radius:12px;background:linear-gradient(135deg,#065F46,#047857);border:1px solid rgba(212,175,55,0.4);color:#F5DEB3;font-size:14px;transition:transform .4s;box-shadow:0 10px 30px rgba(0,0,0,0.4)}
+.tt.sw{transform:translateX(-50%) translateY(0)}
+
+.wc{border-left:3px solid #D4AF37;background:linear-gradient(90deg,rgba(6,78,59,0.3),transparent)}
+
+.mb{position:fixed;bottom:24px;right:24px;z-index:90;width:50px;height:50px;border-radius:50%;background:linear-gradient(135deg,#065F46,#047857);border:2px solid #D4AF37;display:flex;align-items:center;justify-content:center;cursor:pointer;color:#D4AF37;box-shadow:0 4px 20px rgba(0,0,0,0.4);transition:all .3s}
+.mb:hover{transform:scale(1.1)}
+.mb.on .br{animation:mba .8s ease-in-out infinite alternate}
+.mb .br{width:3px;height:12px;background:#D4AF37;border-radius:2px;margin:0 1.5px;transform-origin:bottom}
+.mb.on .br:nth-child(1){animation-delay:0s}
+.mb.on .br:nth-child(2){animation-delay:.2s}
+.mb.on .br:nth-child(3){animation-delay:.4s}
+.mb.on .br:nth-child(4){animation-delay:.1s}
+@keyframes mba{0%{height:5px}100%{height:16px}}
+
+.si{animation:bn 2s ease-in-out infinite}
+@keyframes bn{0%,100%{transform:translateY(0)}50%{transform:translateY(10px)}}
+
+@keyframes fiu{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:translateY(0)}}
+.afu{animation:fiu .8s ease forwards}
+.d2{animation-delay:.2s;opacity:0}
+.d4{animation-delay:.4s;opacity:0}
+.d6{animation-delay:.6s;opacity:0}
+.d8{animation-delay:.8s;opacity:0}
+
+.bs{position:relative;background:linear-gradient(180deg,#060E0A 0%,#0A1A14 50%,#060E0A 100%)}
+.ba{position:relative;background:linear-gradient(180deg,#060E0A 0%,#081510 50%,#060E0A 100%)}
+
+.ec{background:linear-gradient(145deg,rgba(6,78,59,0.35),rgba(2,44,34,0.55));border:1px solid rgba(212,175,55,0.2);backdrop-filter:blur(12px);transition:all .4s}
+.ec:hover{border-color:rgba(212,175,55,0.45);box-shadow:0 8px 25px rgba(212,175,55,0.06);transform:translateY(-4px)}
+
+.mf{border:2px solid rgba(212,175,55,0.25);border-radius:16px;overflow:hidden}
+
+input,textarea{font-family:'Lato',sans-serif}
+input::placeholder,textarea::placeholder{color:rgba(255,255,255,0.3)}
+
+.hid{position:absolute;border-radius:50%;border:1px solid rgba(212,175,55,0.15);pointer-events:none}
+
+.pb{background-image:radial-gradient(circle at 20% 50%,rgba(212,175,55,0.03) 0%,transparent 50%),radial-gradient(circle at 80% 50%,rgba(16,185,129,0.05) 0%,transparent 50%),radial-gradient(circle at 50% 0%,rgba(212,175,55,0.04) 0%,transparent 40%)}
+
+/* ===== INPUT NAMA STYLING ===== */
+.ni-wrap{width:100%;max-width:300px;margin:0 auto}
+.ni-input{width:100%;padding:12px 18px;border-radius:50px;text-align:center;font-size:15px;color:#fff;letter-spacing:0.5px;background:rgba(255,255,255,0.06);border:1px solid rgba(212,175,55,0.25);outline:none;transition:all .3s}
+.ni-input:focus{border-color:rgba(212,175,55,0.6);background:rgba(255,255,255,0.09);box-shadow:0 0 20px rgba(212,175,55,0.08)}
+.ni-input::placeholder{color:rgba(255,255,255,0.25);font-style:italic}
+.ni-err{font-size:12px;color:#f87171;margin-top:6px;opacity:0;height:0;transition:all .3s;overflow:hidden}
+.ni-err.show{opacity:1;height:18px}
+
+/* ===== GREETING SECTION ===== */
+.greeting-sec{position:relative;overflow:hidden}
+.greeting-sec::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(212,175,55,0.06) 0%,transparent 60%);pointer-events:none}
+@keyframes greetFade{0%{opacity:0;transform:translateY(30px)}100%{opacity:1;transform:translateY(0)}}
+.greet-anim{animation:greetFade 1s ease forwards}
+.greet-d1{animation-delay:.2s;opacity:0}
+.greet-d2{animation-delay:.5s;opacity:0}
+.greet-d3{animation-delay:.8s;opacity:0}
+.greet-d4{animation-delay:1.1s;opacity:0}
+
+/* Wave hand animation */
+@keyframes wave{0%{transform:rotate(0deg)}10%{transform:rotate(14deg)}20%{transform:rotate(-8deg)}30%{transform:rotate(14deg)}40%{transform:rotate(-4deg)}50%{transform:rotate(10deg)}60%{transform:rotate(0deg)}100%{transform:rotate(0deg)}}
+.wave-hand{display:inline-block;animation:wave 2.5s ease-in-out infinite;transform-origin:70% 70%}
+
+/* ===== LOGO BANK TANPA BACKGROUND ===== */
+.bank-logo{height:36px;width:auto;object-fit:contain;filter:opacity:0.85;transition:opacity .3s}
+.bank-logo:hover{opacity:1}
+</style>
+</head>
+<body class="pb">
+
+<div id="ptc" class="fixed inset-0 pointer-events-none z-[1]"></div>
+
+<!-- AUDIO -->
+<audio id="bgMusic" loop preload="auto">
+    <source src="https://cdn.jsdelivr.net/gh/kaisar171/growoldwithu@main/Saxophone%20Instrumental%20-%20I%20Wanna%20Grow%20Old%20with%20You%20Covered%20by%20taofiqmuhammads%20%23SAXCAM.mp3" type="audio/mpeg">
+</audio>
+
+<!-- COVER -->
+<div id="cov" class="cover-overlay">
+<div class="hid w-[280px] h-[280px] top-[10%] left-[-5%] opacity-30"></div>
+<div class="hid w-[180px] h-[180px] bottom-[10%] right-[-3%] opacity-20"></div>
+<div class="text-center px-6">
+<p class="font-cormorant text-lg sm:text-xl tracking-[0.3em] uppercase mb-4 afu" style="color:#EED9A0">The Wedding Of</p>
+<div class="o-frame inline-block mb-6 afu d2">
+<span class="cbl"></span><span class="cbr"></span>
+<h1 class="font-playfair text-4xl sm:text-5xl md:text-6xl font-bold gs leading-tight">Widi &amp; Winda</h1>
+</div>
+<p class="font-cormorant text-xl tracking-widest mb-2 afu d4" style="color:#EED9A0">18 . 05 . 2026</p>
+<div class="divo my-8 afu d4"><iconify-icon icon="lucide:diamond" width="14"></iconify-icon></div>
+
+<!-- INPUT NAMA -->
+<div class="afu d6">
+<p class="font-cormorant text-base mb-4" style="color:rgba(238,217,160,0.6)">Kepada Yth.</p>
+<div class="ni-wrap">
+<input type="text" id="nameInput" class="ni-input" placeholder="Masukkan nama Anda" autocomplete="off">
+<p id="nameErr" class="ni-err">Silakan masukkan nama Anda terlebih dahulu</p>
+</div>
+</div>
+
+<button id="obtn" class="bg px-10 py-3.5 rounded-full text-sm tracking-[0.2em] uppercase afu d8 cursor-pointer mt-8">Buka Undangan</button>
+</div>
+<div class="absolute bottom-8 si"><iconify-icon icon="lucide:chevrons-down" width="24" style="color:rgba(212,175,55,0.4)"></iconify-icon></div>
+</div>
+
+<!-- MUSIC BTN -->
+<button id="mbtn" class="mb" title="Toggle Music">
+<div class="flex items-end gap-[2px] h-[18px]">
+<div class="br"></div><div class="br"></div><div class="br"></div><div class="br"></div>
+</div>
+</button>
+
+<!-- MAIN -->
+<main id="mc" class="relative z-10">
+
+<!-- GREETING SECTION -->
+<section class="greeting-sec min-h-screen flex items-center justify-center px-6 bs" id="greetSec">
+<div class="text-center max-w-lg mx-auto">
+<div class="greet-anim greet-d1 mb-4">
+<span class="wave-hand text-5xl">👋</span>
+</div>
+<p class="font-cormorant text-xl sm:text-2xl tracking-wider greet-anim greet-d1" style="color:rgba(238,217,160,0.6)">Assalamu'alaikum</p>
+<div class="divo my-6 greet-anim greet-d2"><iconify-icon icon="lucide:sparkles" width="14"></iconify-icon></div>
+<p class="font-cormorant text-lg greet-anim greet-d2" style="color:rgba(255,255,255,0.4)">Kepada Yth.</p>
+<p class="font-playfair text-2xl sm:text-3xl md:text-4xl font-semibold mt-3 mb-2 greet-anim greet-d3" style="color:#F5DEB3">
+Bapak/Ibu/Saudara/i
+</p>
+<h2 id="greetName" class="font-playfair text-3xl sm:text-4xl md:text-5xl font-bold gs mt-2 mb-6 greet-anim greet-d3"></h2>
+<div class="divo my-6 greet-anim greet-d4"><iconify-icon icon="lucide:heart" width="12"></iconify-icon></div>
+<p class="font-cormorant text-lg sm:text-xl italic leading-relaxed greet-anim greet-d4" style="color:rgba(255,255,255,0.45)">
+Tanpa mengurangi rasa hormat, kami mengundang Anda<br>untuk hadir di pernikahan kami.
+</p>
+<div class="mt-12 si greet-anim greet-d4">
+<iconify-icon icon="lucide:chevrons-down" width="24" style="color:rgba(212,175,55,0.3)"></iconify-icon>
+</div>
+</div>
+</section>
+
+<!-- BISMILLAH -->
+<section class="min-h-screen flex items-center justify-center px-6 bs">
+<div class="text-center sr max-w-lg mx-auto">
+<p class="font-cormorant text-3xl sm:text-4xl leading-relaxed mb-6" style="font-weight:300;color:#EED9A0">&#1576;&#1616;&#1587;&#1618;&#1605;&#1616; &#1575;&#1604;&#1604;&#1617;&#1607;&#1616; &#1575;&#1604;&#1585;&#1617;&#1581;&#1618;&#1605;&#1648;&#1606;&#1616; &#1575;&#1604;&#1585;&#1617;&#1581;&#1616;&#1610;&#1605;&#1616;</p>
+<p class="font-cormorant text-lg italic leading-relaxed" style="color:rgba(255,255,255,0.55)">Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan hidup dari jenismu sendiri, supaya kamu merasa tenteram kepadanya, dan dijadikan-Nya di antaramu rasa kasih dan sayang.</p>
+<p class="font-lato text-sm mt-4 tracking-wider" style="color:rgba(212,175,55,0.5)">QS. Ar-Rum: 21</p>
+</div>
+</section>
+
+<!-- COUPLE -->
+<section class="min-h-screen flex items-center justify-center px-6 py-20 ba">
+<div class="sr max-w-4xl mx-auto">
+<div class="text-center mb-12">
+<p class="font-cormorant text-lg tracking-[0.3em] uppercase mb-2" style="color:#EED9A0">Introducing</p>
+<h2 class="font-playfair text-3xl sm:text-4xl font-semibold" style="color:#F5DEB3">Mempelai</h2>
+<div class="divo mt-4"><iconify-icon icon="lucide:heart" width="12"></iconify-icon></div>
+</div>
+<div class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-14">
+<div class="text-center">
+<div class="pf mx-auto mb-5"><img src="https://lh3.googleusercontent.com/d/1277BKVvs5LYeeOL_DqfFyvupWlH9jTFo" alt="Widi" loading="lazy"></div>
+<h3 class="font-playfair text-2xl sm:text-3xl font-semibold mb-1" style="color:#F5DEB3">Widi Kaisar Samudra</h3>
+<div class="divo my-3"><span style="font-size:10px">&#9670;</span></div>
+<p class="font-cormorant text-lg" style="color:rgba(255,255,255,0.45)">Putra dari<br><span style="color:#EED9A0">Bapak Herdi Antoni</span> &amp;<br><span style="color:#EED9A0">Ibu Ari Setya Ning</span></p>
+</div>
+<div class="flex-shrink-0">
+<div class="w-20 h-20 rounded-full border-2 flex items-center justify-center" style="border-color:rgba(212,175,55,0.25);background:rgba(2,44,34,0.5)">
+<span class="font-playfair text-3xl italic" style="color:#D4AF37">&amp;</span>
+</div>
+</div>
+<div class="text-center">
+<div class="pf mx-auto mb-5"><img src="https://lh3.googleusercontent.com/d/1XEffuKXE_ijJpsCqdjAA6LbReDRbclIQ" alt="Winda" loading="lazy"></div>
+<h3 class="font-playfair text-2xl sm:text-3xl font-semibold mb-1" style="color:#F5DEB3">Winda Apriza</h3>
+<div class="divo my-3"><span style="font-size:10px">&#9670;</span></div>
+<p class="font-cormorant text-lg" style="color:rgba(255,255,255,0.45)">Putri dari<br><span style="color:#EED9A0">Bapak M. Sadi</span> &amp;<br><span style="color:#EED9A0">Ibu Fera Wati</span></p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- EVENTS -->
+<section class="py-20 px-6 bs">
+<div class="sr max-w-4xl mx-auto">
+<div class="text-center mb-12">
+<p class="font-cormorant text-lg tracking-[0.3em] uppercase mb-2" style="color:#EED9A0">Save The Date</p>
+<h2 class="font-playfair text-3xl sm:text-4xl font-semibold" style="color:#F5DEB3">Rangkaian Acara</h2>
+<div class="divo mt-4"><iconify-icon icon="lucide:calendar-heart" width="14"></iconify-icon></div>
+</div>
+<div class="grid md:grid-cols-2 gap-6 mb-8">
+<div class="ec rounded-2xl p-8 text-center">
+<div class="w-14 h-14 rounded-full border-2 flex items-center justify-center mx-auto mb-5" style="border-color:rgba(212,175,55,0.35)"><iconify-icon icon="lucide:book-open" width="26" style="color:#D4AF37"></iconify-icon></div>
+<p class="font-playfair text-xl font-semibold tracking-wider mb-1" style="color:#EED9A0">Akad Nikah</p>
+<div class="divo my-3"><span style="font-size:10px">&#9670;</span></div>
+<p class="font-playfair text-4xl font-bold mb-1" style="color:#F5DEB3">18</p>
+<p class="font-cormorant text-xl tracking-wider mb-5" style="color:rgba(238,217,160,0.7)">Mei 2026</p>
+<div class="space-y-3" style="color:rgba(255,255,255,0.6)">
+<div class="flex items-center justify-center gap-3"><iconify-icon icon="lucide:clock" width="16" style="color:rgba(212,175,55,0.5)"></iconify-icon><span class="font-cormorant text-lg">09.00 WIB</span></div>
+<div class="flex items-center justify-center gap-3"><iconify-icon icon="lucide:map-pin" width="16" style="color:rgba(212,175,55,0.5)"></iconify-icon><span class="font-cormorant text-base">Desa Pekurun Utara</span></div>
+<div class="flex items-center justify-center gap-3"><iconify-icon icon="lucide:building-2" width="16" style="color:rgba(212,175,55,0.5)"></iconify-icon><span class="font-cormorant text-sm" style="color:rgba(255,255,255,0.4)">Kec. Abung Tengah, Lampung Utara</span></div>
+</div>
+</div>
+<div class="ec rounded-2xl p-8 text-center">
+<div class="w-14 h-14 rounded-full border-2 flex items-center justify-center mx-auto mb-5" style="border-color:rgba(212,175,55,0.35)"><iconify-icon icon="lucide:party-popper" width="26" style="color:#D4AF37"></iconify-icon></div>
+<p class="font-playfair text-xl font-semibold tracking-wider mb-1" style="color:#EED9A0">Resepsi Pernikahan</p>
+<div class="divo my-3"><span style="font-size:10px">&#9670;</span></div>
+<p class="font-playfair text-4xl font-bold mb-1" style="color:#F5DEB3">18</p>
+<p class="font-cormorant text-xl tracking-wider mb-5" style="color:rgba(238,217,160,0.7)">Mei 2026</p>
+<div class="space-y-3" style="color:rgba(255,255,255,0.6)">
+<div class="flex items-center justify-center gap-3"><iconify-icon icon="lucide:clock" width="16" style="color:rgba(212,175,55,0.5)"></iconify-icon><span class="font-cormorant text-lg">10.00 WIB - Selesai</span></div>
+<div class="flex items-center justify-center gap-3"><iconify-icon icon="lucide:map-pin" width="16" style="color:rgba(212,175,55,0.5)"></iconify-icon><span class="font-cormorant text-base">Desa Pekurun Utara</span></div>
+<div class="flex items-center justify-center gap-3"><iconify-icon icon="lucide:building-2" width="16" style="color:rgba(212,175,55,0.5)"></iconify-icon><span class="font-cormorant text-sm" style="color:rgba(255,255,255,0.4)">Kec. Abung Tengah, Lampung Utara</span></div>
+</div>
+</div>
+</div>
+<div class="text-center">
+<p class="font-cormorant italic text-base leading-relaxed max-w-xl mx-auto" style="color:rgba(255,255,255,0.35)">Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu kepada kami.</p>
+<p class="font-playfair text-lg mt-5 font-medium" style="color:#EED9A0">Widi &amp; Winda</p>
+</div>
+</div>
+</section>
+
+<!-- MAPS -->
+<section class="py-20 px-6 ba">
+<div class="sr max-w-3xl mx-auto">
+<div class="text-center mb-10">
+<p class="font-cormorant text-lg tracking-[0.3em] uppercase mb-2" style="color:#EED9A0">Location</p>
+<h2 class="font-playfair text-3xl font-semibold" style="color:#F5DEB3">Lokasi Acara</h2>
+<div class="divo mt-4"><iconify-icon icon="lucide:map" width="14"></iconify-icon></div>
+<p class="font-cormorant text-base mt-4" style="color:rgba(255,255,255,0.45)">Desa Pekurun Utara, Kec. Abung Tengah<br>Lampung Utara, Lampung</p>
+</div>
+<div class="mf">
+<iframe src="https://maps.google.com/maps?q=Jembatan+Way+Arum+Desa+Sri+Bandung+Abung+Tengah+Lampung+Utara+Lampung&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="320" style="border:0;display:block" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<div class="text-center mt-6">
+<a href="https://www.google.com/maps/search/Jembatan+Way+Arum+Desa+Sri+Bandung+Abung+Tengah+Lampung+Utara+Lampung" target="_blank" rel="noopener noreferrer" class="bo inline-flex items-center gap-2 px-8 py-3 rounded-full text-sm tracking-wider uppercase">
+<iconify-icon icon="lucide:navigation" width="16"></iconify-icon> Buka Google Maps
+</a>
+</div>
+</div>
+</section>
+
+<!-- COUNTDOWN -->
+<section class="py-20 px-6 bs">
+<div class="sr max-w-3xl mx-auto text-center">
+<p class="font-cormorant text-lg tracking-[0.3em] uppercase mb-2" style="color:#EED9A0">Counting Down To</p>
+<h2 class="font-playfair text-3xl font-semibold mb-10" style="color:#F5DEB3">Hari Bahagia</h2>
+<div class="grid grid-cols-4 gap-3 sm:gap-6 max-w-xl mx-auto">
+<div class="cb rounded-2xl p-4 sm:p-6 text-center"><p id="cd-d" class="font-playfair text-3xl sm:text-5xl font-bold" style="color:#F5DEB3">0</p><p class="font-cormorant text-xs sm:text-sm tracking-wider mt-2 uppercase" style="color:rgba(212,175,55,0.5)">Hari</p></div>
+<div class="cb rounded-2xl p-4 sm:p-6 text-center"><p id="cd-h" class="font-playfair text-3xl sm:text-5xl font-bold" style="color:#F5DEB3">0</p><p class="font-cormorant text-xs sm:text-sm tracking-wider mt-2 uppercase" style="color:rgba(212,175,55,0.5)">Jam</p></div>
+<div class="cb rounded-2xl p-4 sm:p-6 text-center"><p id="cd-m" class="font-playfair text-3xl sm:text-5xl font-bold" style="color:#F5DEB3">0</p><p class="font-cormorant text-xs sm:text-sm tracking-wider mt-2 uppercase" style="color:rgba(212,175,55,0.5)">Menit</p></div>
+<div class="cb rounded-2xl p-4 sm:p-6 text-center"><p id="cd-s" class="font-playfair text-3xl sm:text-5xl font-bold" style="color:#F5DEB3">0</p><p class="font-cormorant text-xs sm:text-sm tracking-wider mt-2 uppercase" style="color:rgba(212,175,55,0.5)">Detik</p></div>
+</div>
+</div>
+</section>
+
+<!-- GALLERY -->
+<section class="py-20 px-6 ba">
+<div class="sr max-w-4xl mx-auto">
+<div class="text-center mb-12">
+<p class="font-cormorant text-lg tracking-[0.3em] uppercase mb-2" style="color:#EED9A0">Gallery</p>
+<h2 class="font-playfair text-3xl font-semibold" style="color:#F5DEB3">Momen Kami</h2>
+<div class="divo mt-4"><iconify-icon icon="lucide:camera" width="14"></iconify-icon></div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+<div class="rounded-2xl overflow-hidden aspect-[3/4] border" style="border-color:rgba(212,175,55,0.12)"><img src="https://picsum.photos/seed/wedding-prewed-1/400/530" alt="G1" class="w-full h-full object-cover hover:scale-110 transition-transform duration-700" loading="lazy"></div>
+<div class="rounded-2xl overflow-hidden aspect-[3/4] border md:mt-8" style="border-color:rgba(212,175,55,0.12)"><img src="https://picsum.photos/seed/wedding-prewed-2/400/530" alt="G2" class="w-full h-full object-cover hover:scale-110 transition-transform duration-700" loading="lazy"></div>
+<div class="rounded-2xl overflow-hidden aspect-[3/4] border" style="border-color:rgba(212,175,55,0.12)"><img src="https://picsum.photos/seed/wedding-prewed-3/400/530" alt="G3" class="w-full h-full object-cover hover:scale-110 transition-transform duration-700" loading="lazy"></div>
+<div class="rounded-2xl overflow-hidden aspect-[3/4] border md:col-span-2" style="border-color:rgba(212,175,55,0.12)"><img src="https://picsum.photos/seed/wedding-prewed-4/800/530" alt="G4" class="w-full h-full object-cover hover:scale-110 transition-transform duration-700" loading="lazy"></div>
+<div class="rounded-2xl overflow-hidden aspect-[3/4] border md:mt-[-2rem]" style="border-color:rgba(212,175,55,0.12)"><img src="https://picsum.photos/seed/wedding-prewed-5/400/530" alt="G5" class="w-full h-full object-cover hover:scale-110 transition-transform duration-700" loading="lazy"></div>
+</div>
+</div>
+</section>
+
+<!-- GIFT -->
+<section class="py-20 px-6 bs">
+<div class="sr max-w-3xl mx-auto">
+<div class="text-center mb-12">
+<p class="font-cormorant text-lg tracking-[0.3em] uppercase mb-2" style="color:#EED9A0">Wedding Gift</p>
+<h2 class="font-playfair text-3xl font-semibold" style="color:#F5DEB3">Kado Digital</h2>
+<div class="divo mt-4"><iconify-icon icon="lucide:gift" width="14"></iconify-icon></div>
+<p class="font-cormorant italic text-base mt-4" style="color:rgba(255,255,255,0.35)">Doa restu Anda merupakan karunia yang sangat berarti bagi kami.<br>Namun jika Anda ingin memberikan tanda kasih, kami menyediakan kado digital.</p>
+</div>
+<div class="grid md:grid-cols-2 gap-6 mb-10">
+<!-- BANK BCA -->
+<div class="rc rounded-2xl p-6 text-center">
+<img src="https://lh3.googleusercontent.com/d/1UJkeSWUpCRIMPgfZPtxWjwK4avRVEAyp" alt="Logo BCA" class="bank-logo mx-auto mb-4">
+<p class="font-cormorant text-lg mb-1" style="color:#F5DEB3">Bank BCA</p>
+<p class="font-playfair text-xl font-semibold tracking-wider mb-1" id="r-bca">88812312334</p>
+<p class="font-cormorant text-sm mb-4" style="color:rgba(212,175,55,0.5)">a.n. Widi Kaisar Samudra</p>
+<button onclick="cpRk('r-bca')" class="bo px-6 py-2 rounded-full text-xs tracking-wider uppercase cursor-pointer flex items-center gap-2 mx-auto"><iconify-icon icon="lucide:copy" width="14"></iconify-icon> Salin</button>
+</div>
+
+<!-- BANK MANDIRI -->
+<div class="rc rounded-2xl p-6 text-center">
+<img src="https://lh3.googleusercontent.com/d/1X9NW3V1bf1TB-B3rvwYLhS5-MR-9GrNa" alt="Logo Mandiri" class="bank-logo mx-auto mb-4">
+<p class="font-cormorant text-lg mb-1" style="color:#F5DEB3">Bank Mandiri</p>
+<p class="font-playfair text-xl font-semibold tracking-wider mb-1" id="r-mdr">454541443444</p>
+<p class="font-cormorant text-sm mb-4" style="color:rgba(212,175,55,0.5)">a.n. Winda Apriza</p>
+<button onclick="cpRk('r-mdr')" class="bo px-6 py-2 rounded-full text-xs tracking-wider uppercase cursor-pointer flex items-center gap-2 mx-auto"><iconify-icon icon="lucide:copy" width="14"></iconify-icon> Salin</button>
+</div>
+</div>
+<div class="text-center">
+<p class="font-cormorant text-base mb-4 tracking-wider" style="color:#EED9A0">Atau scan QRIS</p>
+<div class="inline-block p-4 rounded-2xl border" style="border-color:rgba(212,175,55,0.18);background:rgba(2,44,34,0.4)">
+<img id="qris" src="https://lh3.googleusercontent.com/d/1pMbzqb8Lh9ErCzARrKZJw20aFWUGxFSE" alt="QRIS" class="w-[200px] h-[200px] rounded-xl object-cover">
+<p class="font-lato text-xs mt-2" style="color:rgba(212,175,55,0.35)">QRIS Payment</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- WISHES -->
+<section class="py-20 px-6 ba">
+<div class="sr max-w-2xl mx-auto">
+<div class="text-center mb-12">
+<p class="font-cormorant text-lg tracking-[0.3em] uppercase mb-2" style="color:#EED9A0">Send Your Wishes</p>
+<h2 class="font-playfair text-3xl font-semibold" style="color:#F5DEB3">Ucapan &amp; Doa</h2>
+<div class="divo mt-4"><iconify-icon icon="lucide:message-circle-heart" width="14"></iconify-icon></div>
+</div>
+<form id="wf" class="gc p-6 sm:p-8 space-y-5">
+<div>
+<label class="font-cormorant text-sm tracking-wider block mb-2" style="color:#EED9A0">Nama</label>
+<input type="text" id="wn" required placeholder="Masukkan nama Anda" class="w-full rounded-xl px-4 py-3 text-white text-sm focus:outline-none transition-all" style="background:rgba(255,255,255,0.04);border:1px solid rgba(212,175,55,0.18)">
+</div>
+<div>
+<label class="font-cormorant text-sm tracking-wider block mb-2" style="color:#EED9A0">Konfirmasi Kehadiran</label>
+<div class="flex gap-3">
+<label class="flex-1 cursor-pointer"><input type="radio" name="att" value="hadir" class="hidden peer" checked><div class="peer-checked:border-[#D4AF37] peer-checked:bg-[rgba(212,175,55,0.08)] border rounded-xl py-3 text-center text-sm transition-all font-cormorant tracking-wider" style="color:rgba(255,255,255,0.5);border-color:rgba(212,175,55,0.18)"><iconify-icon icon="lucide:check-circle" width="16" class="mr-1"></iconify-icon> Hadir</div></label>
+<label class="flex-1 cursor-pointer"><input type="radio" name="att" value="tidak" class="hidden peer"><div class="peer-checked:border-[#D4AF37] peer-checked:bg-[rgba(212,175,55,0.08)] border rounded-xl py-3 text-center text-sm transition-all font-cormorant tracking-wider" style="color:rgba(255,255,255,0.5);border-color:rgba(212,175,55,0.18)"><iconify-icon icon="lucide:x-circle" width="16" class="mr-1"></iconify-icon> Tidak Hadir</div></label>
+<label class="flex-1 cursor-pointer"><input type="radio" name="att" value="ragu" class="hidden peer"><div class="peer-checked:border-[#D4AF37] peer-checked:bg-[rgba(212,175,55,0.08)] border rounded-xl py-3 text-center text-sm transition-all font-cormorant tracking-wider" style="color:rgba(255,255,255,0.5);border-color:rgba(212,175,55,0.18)"><iconify-icon icon="lucide:help-circle" width="16" class="mr-1"></iconify-icon> Masih Ragu</div></label>
+</div>
+</div>
+<div>
+<label class="font-cormorant text-sm tracking-wider block mb-2" style="color:#EED9A0">Ucapan &amp; Doa</label>
+<textarea id="wm" required rows="4" placeholder="Tuliskan ucapan dan doa Anda..." class="w-full rounded-xl px-4 py-3 text-white text-sm focus:outline-none transition-all resize-none" style="background:rgba(255,255,255,0.04);border:1px solid rgba(212,175,55,0.18)"></textarea>
+</div>
+<button type="submit" class="bg w-full py-3.5 rounded-xl text-sm tracking-[0.15em] uppercase cursor-pointer flex items-center justify-center gap-2"><iconify-icon icon="lucide:send" width="16"></iconify-icon> Kirim Ucapan</button>
+</form>
+</div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="py-20 px-6 bs" id="ts">
+<div class="sr max-w-2xl mx-auto">
+<div class="text-center mb-12">
+<p class="font-cormorant text-lg tracking-[0.3em] uppercase mb-2" style="color:#EED9A0">Testimonials</p>
+<h2 class="font-playfair text-3xl font-semibold" style="color:#F5DEB3">Ucapan Tamu</h2>
+<div class="divo mt-4"><iconify-icon icon="lucide:messages-square" width="14"></iconify-icon></div>
+</div>
+<div id="tl" class="space-y-4 max-h-[500px] overflow-y-auto pr-2" style="scrollbar-width:thin;scrollbar-color:#065F46 transparent"></div>
+<div id="es" class="text-center py-10" style="display:none">
+<iconify-icon icon="lucide:message-circle" width="40" style="color:rgba(212,175,55,0.15)"></iconify-icon>
+<p class="font-cormorant text-lg mt-3" style="color:rgba(255,255,255,0.25)">Belum ada ucapan</p>
+</div>
+</div>
+</section>
+
+<!-- CLOSING -->
+<section class="min-h-screen flex items-center justify-center px-6 ba">
+<div class="sr text-center max-w-lg mx-auto">
+<div class="o-frame inline-block mb-8">
+<span class="cbl"></span><span class="cbr"></span>
+<p class="font-cormorant text-xl tracking-wider" style="font-weight:300;color:#EED9A0">Terima Kasih</p>
+</div>
+<p class="font-cormorant text-lg leading-relaxed mb-8" style="color:rgba(255,255,255,0.45)">Atas kehadiran dan doa restu yang diberikan,<br>kami mengucapkan terima kasih yang sebesar-besarnya.</p>
+<p class="font-playfair text-2xl font-semibold mb-1" style="color:#F5DEB3">Widi &amp; Winda</p>
+<div class="divo my-8"><iconify-icon icon="lucide:heart" width="12"></iconify-icon></div>
+<p class="font-cormorant text-base italic" style="color:rgba(212,175,55,0.4)">Wassalamu'alaikum Warahmatullahi Wabarakatuh</p>
+<div class="mt-12 flex justify-center gap-3">
+<div class="w-2 h-2 rounded-full" style="background:rgba(212,175,55,0.25)"></div>
+<div class="w-2 h-2 rounded-full" style="background:rgba(212,175,55,0.45)"></div>
+<div class="w-2 h-2 rounded-full" style="background:rgba(212,175,55,0.25)"></div>
+</div>
+</div>
+</section>
+<div class="h-20"></div>
+</main>
+
+<div id="tst" class="tt"><span id="tmsg"></span></div>
+
+<script>
+/* =====================================================
+   VARIABLE GLOBAL NAMA TAMU
+   ===================================================== */
+var guestName = '';
+
+/* Cek URL parameter ?to=Nama */
+(function() {
+    var params = new URLSearchParams(window.location.search);
+    var urlName = params.get('to');
+    if (urlName && urlName.trim()) {
+        guestName = urlName.trim();
+        var nameInput = document.getElementById('nameInput');
+        if (nameInput) nameInput.value = guestName;
+    }
+})();
+
+/* =====================================================
+   MUSIK
+   ===================================================== */
+var audio = document.getElementById('bgMusic');
+var isPlaying = false;
+
+audio.addEventListener('error', function() {
+    console.error('[Musik] Gagal memuat file MP3');
+    st('File musik gagal dimuat. Periksa URL MP3.');
+});
+
+audio.addEventListener('canplaythrough', function() {
+    console.log('[Musik] File MP3 siap diputar');
+});
+
+/* Tombol "Buka Undangan" */
+document.getElementById('obtn').addEventListener('click', function() {
+    var nameInput = document.getElementById('nameInput');
+    var nameErr = document.getElementById('nameErr');
+    var name = nameInput.value.trim();
+
+    if (!name) {
+        nameErr.classList.add('show');
+        nameInput.style.borderColor = 'rgba(248,113,113,0.6)';
+        nameInput.style.boxShadow = '0 0 15px rgba(248,113,113,0.1)';
+        nameInput.focus();
+        return;
+    }
+
+    guestName = name;
+
+    document.getElementById('cov').classList.add('hidden');
+    document.body.style.overflow = 'auto';
+
+    document.getElementById('greetName').textContent = guestName;
+
+    var url = new URL(window.location);
+    url.searchParams.set('to', guestName);
+    history.replaceState(null, '', url);
+
+    var playPromise = audio.play();
+    if (playPromise !== undefined) {
+        playPromise.then(function() {
+            isPlaying = true;
+            document.getElementById('mbtn').classList.add('on');
+        }).catch(function(err) {
+            console.log('[Musik] Autoplay diblokir browser:', err);
+            st('Klik tombol musik di pojok kanan bawah untuk memutar');
+        });
+    }
+});
+
+document.getElementById('nameInput').addEventListener('input', function() {
+    var nameErr = document.getElementById('nameErr');
+    if (nameErr.classList.contains('show')) {
+        nameErr.classList.remove('show');
+        this.style.borderColor = 'rgba(212,175,55,0.25)';
+        this.style.boxShadow = 'none';
+    }
+});
+
+document.getElementById('nameInput').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') {
+        e.preventDefault();
+        document.getElementById('obtn').click();
+    }
+});
+
+document.getElementById('mbtn').addEventListener('click', function() {
+    if (isPlaying) {
+        audio.pause();
+        isPlaying = false;
+        this.classList.remove('on');
+    } else {
+        var playPromise = audio.play();
+        if (playPromise !== undefined) {
+            playPromise.then(function() {
+                isPlaying = true;
+                document.getElementById('mbtn').classList.add('on');
+            }).catch(function(err) {
+                console.log('[Musik] Gagal play:', err);
+                st('Gagal memutar. Periksa koneksi internet.');
+            });
+        }
+    }
+});
+
+/* =====================================================
+   COUNTDOWN
+   ===================================================== */
+var wd = new Date('2026-05-18T09:00:00+07:00').getTime();
+function uc() {
+    var d = wd - new Date().getTime();
+    if (d <= 0) {
+        document.getElementById('cd-d').textContent = '0';
+        document.getElementById('cd-h').textContent = '0';
+        document.getElementById('cd-m').textContent = '0';
+        document.getElementById('cd-s').textContent = '0';
+        return;
+    }
+    document.getElementById('cd-d').textContent = Math.floor(d / 864e5);
+    document.getElementById('cd-h').textContent = Math.floor(d % 864e5 / 36e5);
+    document.getElementById('cd-m').textContent = Math.floor(d % 36e5 / 6e4);
+    document.getElementById('cd-s').textContent = Math.floor(d % 6e4 / 1e3);
+}
+uc();
+setInterval(uc, 1000);
+
+/* =====================================================
+   COPY REKENING
+   ===================================================== */
+function cpRk(id) {
+    var t = document.getElementById(id).textContent.trim();
+    navigator.clipboard.writeText(t).then(function() {
+        st('Nomor rekening berhasil disalin!');
+    }).catch(function() {
+        var a = document.createElement('textarea');
+        a.value = t;
+        document.body.appendChild(a);
+        a.select();
+        document.execCommand('copy');
+        document.body.removeChild(a);
+        st('Nomor rekening berhasil disalin!');
+    });
+}
+
+/* =====================================================
+   TOAST
+   ===================================================== */
+function st(m) {
+    var t = document.getElementById('tst');
+    document.getElementById('tmsg').textContent = m;
+    t.classList.add('sw');
+    setTimeout(function() { t.classList.remove('sw'); }, 3500);
+}
+
+/* =====================================================
+   TESTIMONIALS
+   ===================================================== */
+var ts = [
+    { n: 'Ahmad Fauzi', a: 'hadir', m: 'Selamat menempuh hidup baru! Semoga menjadi keluarga sakinah mawaddah warahmah. Aamiin.', d: '27 April 2026' },
+    { n: 'Siti Rahma', a: 'hadir', m: 'Bahagia selalu untuk Widi &amp; Winda! Langgeng sampai Jannah!', d: '29 April 2026' }
+];
+
+function rt() {
+    var l = document.getElementById('tl'), e = document.getElementById('es');
+    if (!ts.length) { l.style.display = 'none'; e.style.display = 'block'; return }
+    l.style.display = 'block'; e.style.display = 'none';
+    var h = '';
+    for (var i = 0; i < ts.length; i++) {
+        var t = ts[i];
+        var b = t.a === 'hadir'
+            ? '<span style="display:inline-flex;align-items:center;gap:4px;font-size:12px;color:#34D399;background:rgba(52,211,153,0.08);padding:4px 10px;border-radius:9999px"><iconify-icon icon="lucide:check" width="12"></iconify-icon>Hadir</span>'
+            : t.a === 'tidak'
+            ? '<span style="display:inline-flex;align-items:center;gap:4px;font-size:12px;color:#f87171;background:rgba(248,113,113,0.08);padding:4px 10px;border-radius:9999px"><iconify-icon icon="lucide:x" width="12"></iconify-icon>Tidak Hadir</span>'
+            : '<span style="display:inline-flex;align-items:center;gap:4px;font-size:12px;color:#fbbf24;background:rgba(251,191,36,0.08);padding:4px 10px;border-radius:9999px"><iconify-icon icon="lucide:help-circle" width="12"></iconify-icon>Masih Ragu</span>';
+        h += '<div class="wc rounded-xl p-5"><div style="display:flex;align-items:start;justify-content:space-between;margin-bottom:12px"><div><p class="font-playfair" style="color:#F5DEB3;font-weight:600;font-size:16px">' + t.n + '</p><p class="font-lato" style="color:rgba(255,255,255,0.2);font-size:12px;margin-top:2px">' + t.d + '</p></div>' + b + '</div><p class="font-cormorant" style="color:rgba(255,255,255,0.55);font-size:16px;line-height:1.6">' + t.m + '</p></div>';
+    }
+    l.innerHTML = h;
+}
+rt();
+
+document.getElementById('wf').addEventListener('submit', function(e) {
+    e.preventDefault();
+    var nm = document.getElementById('wn').value.trim();
+    var mg = document.getElementById('wm').value.trim();
+    var at = document.querySelector('input[name="att"]:checked').value;
+    if (!nm || !mg) return;
+    if (!nm && guestName) nm = guestName;
+    var now = new Date();
+    var bl = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+    var ds = now.getDate() + ' ' + bl[now.getMonth()] + ' ' + now.getFullYear();
+    ts.unshift({ n: nm, a: at, m: mg, d: ds });
+    rt();
+    this.reset();
+    setTimeout(function() { document.getElementById('ts').scrollIntoView({ behavior: 'smooth', block: 'start' }) }, 300);
+    st('Terima kasih! Ucapan Anda berhasil dikirim');
+});
+
+/* =====================================================
+   AUTO-FILL NAMA DI FORM UCAPAN
+   ===================================================== */
+(function() {
+    var wishNameInput = document.getElementById('wn');
+    function setWishName() {
+        if (guestName) {
+            wishNameInput.value = guestName;
+            wishNameInput.setAttribute('placeholder', guestName);
+        }
+    }
+    setWishName();
+    document.getElementById('wf').addEventListener('submit', function() {
+        if (guestName && !wishNameInput.value.trim()) {
+            wishNameInput.value = guestName;
+        }
+    }, true);
+})();
+
+/* =====================================================
+   SCROLL REVEAL
+   ===================================================== */
+var ob = new IntersectionObserver(function(en) {
+    for (var i = 0; i < en.length; i++) { if (en[i].isIntersecting) en[i].target.classList.add('rv'); }
+}, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+var els = document.querySelectorAll('.sr');
+for (var i = 0; i < els.length; i++) ob.observe(els[i]);
+
+/* =====================================================
+   PARTICLES
+   ===================================================== */
+(function() {
+    var c = document.getElementById('ptc');
+    var n = window.innerWidth < 768 ? 12 : 25;
+    for (var i = 0; i < n; i++) {
+        var p = document.createElement('div');
+        p.classList.add('pt');
+        p.style.left = Math.random() * 100 + '%';
+        var s = (Math.random() * 3 + 2) + 'px';
+        p.style.width = s; p.style.height = s;
+        p.style.animationDuration = (Math.random() * 15 + 10) + 's';
+        p.style.animationDelay = (Math.random() * 15) + 's';
+        c.appendChild(p);
+    }
+})();
+
+document.body.style.overflow = 'hidden';
+</script>
+</body>
+</html>
